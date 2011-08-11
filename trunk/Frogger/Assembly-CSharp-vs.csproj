@@ -45,12 +45,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CarFactory.cs" />
-     <Compile Include="Assets\Scripts\CarTransform.cs" />
-     <Compile Include="Assets\Scripts\MotorcycleTransform.cs" />
-     <Compile Include="Assets\Scripts\TruckTransform.cs" />
-     <None Include="Assets\Prefabs\license.txt" />
-     <None Include="Assets\license.txt" />
-     <None Include="Assets\Prefabs\Lo-detail_forklift\readme.txt" />
+     <Compile Include="Assets\Scripts\CarMovement.cs" />
+     <Compile Include="Assets\Scripts\MotorcycleMovement.cs" />
+     <Compile Include="Assets\Scripts\TruckMovement.cs" />
+     <None Include="Assets\Prefabs\Ram3500\READ ME.txt" />
+     <None Include="Assets\Prefabs\Bantam\Readme.txt" />
+     <None Include="Assets\Prefabs\AlfaRomeo159\readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
