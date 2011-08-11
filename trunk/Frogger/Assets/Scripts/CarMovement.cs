@@ -18,7 +18,6 @@ public class CarMovement : MonoBehaviour {
 		if (!collision)
 		{
 			rigidbody.velocity = speed * transform.forward;
-			//transform.Translate(speed * new Vector3(0,0,1) * Time.deltaTime);	
 		}
 	}
 	
@@ -27,6 +26,7 @@ public class CarMovement : MonoBehaviour {
 		Debug.Log(string.Format("rv: {0}", ci.relativeVelocity));
 		if (ci.collider.tag == "car" || ci.collider.tag == "motorcycle" || ci.collider.tag == "truck")
 		{
+			Debug.Log(string.Format("Car {0} Motorcylce {1} Truck {2}", ci.collider.tag == "car", ci.collider.tag == "motorcycle", ci.collider.tag == "truck"));
 			collision = true;
 			rigidbody.AddForce(ci.relativeVelocity * -100);
 		}

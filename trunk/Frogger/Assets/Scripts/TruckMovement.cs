@@ -4,7 +4,6 @@ using System.Collections;
 public class TruckMovement : MonoBehaviour {
 
 	private float speed;
-	
 	private bool collision = false;
 	
 	// Use this for initialization
@@ -18,7 +17,6 @@ public class TruckMovement : MonoBehaviour {
 		if (!collision)
 		{
 			rigidbody.velocity = speed * transform.forward;
-			//transform.Translate(speed * new Vector3(0,0,1) * Time.deltaTime);	
 		}
 	}
 	
