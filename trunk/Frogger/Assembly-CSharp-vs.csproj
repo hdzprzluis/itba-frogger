@@ -48,9 +48,10 @@
      <Compile Include="Assets\Scripts\CarMovement.cs" />
      <Compile Include="Assets\Scripts\MotorcycleMovement.cs" />
      <Compile Include="Assets\Scripts\TruckMovement.cs" />
+     <None Include="Assets\Prefabs\license.txt" />
      <None Include="Assets\Prefabs\Ram3500\READ ME.txt" />
      <None Include="Assets\Prefabs\Bantam\Readme.txt" />
-     <None Include="Assets\Prefabs\AlfaRomeo159\readme.txt" />
+     <None Include="Assets\license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
