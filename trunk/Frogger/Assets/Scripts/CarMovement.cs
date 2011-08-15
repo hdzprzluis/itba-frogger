@@ -9,7 +9,12 @@ public class CarMovement : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		speed = Random.Range(90, 120);
+		if ( collider.tag == "car" )
+			speed = Random.Range(90, 120);
+		else if (collider.tag == "truck" )
+			speed = Random.Range(50, 90);
+		else if (collider.tag == "motorcycle" )
+			speed = Random.Range(120, 180);
 	}
 	
 	// Update is called once per frame
@@ -23,14 +28,11 @@ public class CarMovement : MonoBehaviour {
 	
 	void Update()
 	{
-		//Vector3 fwd = rigidbody.position;
-		//Debug.Log(string.Format("CAR Object {0} Position {1}", transform.tag, transform.position));
 		Ray ray = new Ray(transform.position, Vector3.forward);
 		RaycastHit hit;
 		if (Physics.Raycast(ray, out hit, 100.0F)){
-			Debug.DrawLine(ray.origin, hit.point);
-			Debug.Log(string.Format("COLLISION CAR Tag {0}", hit.collider.tag));
-			transform.eulerAngles = new Vector3(0,180,0);
+			// Then they crush, it reduces their speed
+			rigidbody.velocity = hit.collider.rigidbody.velocity * 0.8F;
 		}
 	}
 	
@@ -38,7 +40,7 @@ public class CarMovement : MonoBehaviour {
 	{
 		if (ci.collider.tag == "car" || ci.collider.tag == "motorcycle" || ci.collider.tag == "truck")
 		{
-			Debug.Log(string.Format("Car {0} Motorcylce {1} Truck {2}", ci.collider.tag == "car", ci.collider.tag == "motorcycle", ci.collider.tag == "truck"));
+			//Debug.Log(string.Format("Car {0} Motorcylce {1} Truck {2}", ci.collider.tag == "car", ci.collider.tag == "motorcycle", ci.collider.tag == "truck"));
 			collision = true;
 			rigidbody.AddForce(ci.relativeVelocity * -100);
 		}
