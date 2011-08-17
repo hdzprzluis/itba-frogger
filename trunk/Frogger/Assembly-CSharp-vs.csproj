@@ -44,14 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CarFactory.cs" />
+     <Compile Include="Assets\Scripts\CarGenerator.cs" />
+     <Compile Include="Assets\Scripts\CarManager.cs" />
      <Compile Include="Assets\Scripts\CarMovement.cs" />
-     <Compile Include="Assets\Scripts\MotorcycleMovement.cs" />
-     <Compile Include="Assets\Scripts\TruckMovement.cs" />
-     <None Include="Assets\Prefabs\license.txt" />
+     <Compile Include="Assets\Scripts\CarOption.cs" />
+     <Compile Include="Assets\Scripts\Detector.cs" />
      <None Include="Assets\Prefabs\Ram3500\READ ME.txt" />
-     <None Include="Assets\Prefabs\Bantam\Readme.txt" />
      <None Include="Assets\license.txt" />
+     <None Include="Assets\Prefabs\Bantam\Readme.txt" />
+     <None Include="Assets\Prefabs\license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
