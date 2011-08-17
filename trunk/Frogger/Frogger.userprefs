@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CarManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CarGenerator.cs">
     <Files>
-      <File FileName="Assets/Scripts/CarMovement.cs" Line="25" Column="51" />
-      <File FileName="Assets/Scripts/CarGenerator.cs" Line="36" Column="44" />
-      <File FileName="Assets/Scripts/Detector.cs" Line="18" Column="27" />
-      <File FileName="Assets/Scripts/CarManager.cs" Line="8" Column="26" />
+      <File FileName="Assets/Scripts/CarGenerator.cs" Line="34" Column="4" />
+      <File FileName="Assets/Scripts/CarMovement.cs" Line="10" Column="57" />
+      <File FileName="Assets/Scripts/MotorcycleMovement.cs" Line="11" Column="2" />
+      <File FileName="Assets/Scripts/TruckMovement.cs" Line="8" Column="13" />
+      <File FileName="Assets/Scripts/CarManager.cs" Line="8" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -44,11 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CarGenerator.cs" />
-     <Compile Include="Assets\Scripts\CarManager.cs" />
-     <Compile Include="Assets\Scripts\CarMovement.cs" />
      <Compile Include="Assets\Scripts\CarOption.cs" />
      <Compile Include="Assets\Scripts\Detector.cs" />
+     <Compile Include="Assets\Scripts\Generators\CarGenerator.cs" />
+     <Compile Include="Assets\Scripts\Generators\MotorcycleGenerator.cs" />
+     <Compile Include="Assets\Scripts\Generators\TruckGenerator.cs" />
+     <Compile Include="Assets\Scripts\MovementsManager\CarMovement.cs" />
+     <Compile Include="Assets\Scripts\MovementsManager\MotorcycleMovement.cs" />
+     <Compile Include="Assets\Scripts\MovementsManager\TruckMovement.cs" />
+     <Compile Include="Assets\Scripts\MovementsManager\VehiculeMovement.cs" />
      <None Include="Assets\Prefabs\Ram3500\READ ME.txt" />
      <None Include="Assets\license.txt" />
      <None Include="Assets\Prefabs\Bantam\Readme.txt" />
