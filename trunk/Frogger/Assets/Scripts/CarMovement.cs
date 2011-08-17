@@ -7,25 +7,23 @@ public class CarMovement : MonoBehaviour {
 	private bool collision = false;
 	
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		if ( collider.tag == "car" )
 			speed = 100.0F;
-		else if (collider.tag == "truck" )
+		else if ( collider.tag == "truck" )
 			speed = 70.0F;
-		else if (collider.tag == "motorcycle" )
+		else if ( collider.tag == "motorcycle" )
 			speed = 150.0F;
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void FixedUpdate () 
+	{
 		if (!collision)
 		{
 			rigidbody.velocity = speed * transform.forward;
 		}
-	}
-	
-	void Update()
-	{
 	}
 	
 	void OnCollisionEnter(Collision ci)
@@ -33,6 +31,7 @@ public class CarMovement : MonoBehaviour {
 		if (ci.collider.tag == "car" || ci.collider.tag == "motorcycle" || ci.collider.tag == "truck")
 		{
 			collision = true;
+			// TODO Detectar si colisiona con la rana
 		}
 	}
 }
