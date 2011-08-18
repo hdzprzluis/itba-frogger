@@ -10,7 +10,7 @@ public class MotorcycleGenerator : VehicleGenerator {
 	void Start () {
 		freq = 65;
 		pool = new List<GameObject>();
-		initialPosition = new Vector3(-185.0F, -1.46F, -450.0F);
+		initialPosition = new Vector3(-126.0F, -1.46F, -450.0F);
 		
 		for( int i = 0 ; i < 20 ; ++i )
 		{

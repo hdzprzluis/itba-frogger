@@ -3,7 +3,7 @@ using System.Collections;
 
 public class VehiculeMovement : MonoBehaviour {
 	
-	protected float speed;
+	public float speed;
 	protected bool collision = false;
 	
 	void FixedUpdate()

@@ -44,20 +44,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CarOption.cs" />
      <Compile Include="Assets\Scripts\Detector.cs" />
      <Compile Include="Assets\Scripts\Generators\CarGenerator.cs" />
      <Compile Include="Assets\Scripts\Generators\MotorcycleGenerator.cs" />
      <Compile Include="Assets\Scripts\Generators\TruckGenerator.cs" />
      <Compile Include="Assets\Scripts\Generators\VehicleGenerator.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\CarMovement.cs" />
+     <Compile Include="Assets\Scripts\MovementsManager\GokuMovement.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\MotorcycleMovement.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\TruckMovement.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\VehiculeMovement.cs" />
-     <None Include="Assets\Prefabs\Ram3500\READ ME.txt" />
-     <None Include="Assets\license.txt" />
-     <None Include="Assets\Prefabs\Bantam\Readme.txt" />
+     <None Include="Assets\Prefabs\Downloaded\Ram3500\READ ME.txt" />
      <None Include="Assets\Prefabs\license.txt" />
+     <None Include="Assets\license.txt" />
+     <None Include="Assets\Prefabs\Downloaded\Bantam\Readme.txt" />
+     <None Include="Assets\Prefabs\Downloaded\license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
