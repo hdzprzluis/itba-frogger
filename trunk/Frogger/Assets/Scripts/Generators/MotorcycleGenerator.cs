@@ -2,30 +2,33 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class MotorcycleGenerator : MonoBehaviour {
+public class MotorcycleGenerator : VehicleGenerator {
 
 	public GameObject vespaPrefab;
 	public GameObject bantamPrefab;
-	private List<GameObject> list;
-	private int ticks;
-	private int freq;
 	
 	void Start () {
-		freq = 89;
-		list = new List<GameObject>();
-		list.Add(vespaPrefab);
-		list.Add(bantamPrefab);
-	}
-	
-	void FixedUpdate()
-	{
-		ticks += 1;
-		if ( ticks % freq == 0 )
+		freq = 65;
+		pool = new List<GameObject>();
+		initialPosition = new Vector3(-185.0F, -1.46F, -450.0F);
+		
+		for( int i = 0 ; i < 20 ; ++i )
 		{
-			Debug.Log(string.Format("Motorcycle Ticks {0}", ticks));
-			int selectionPrefab = Random.Range(0, list.Count);
-			GameObject car = Instantiate(list[selectionPrefab], new Vector3(-185.0F, -1.46F, -450.0F), Quaternion.identity) as GameObject;
-			//car.rigidbody.velocity = bantamPrefab.rigidbody.velocity;
+			GameObject moto;
+			int selectionPrefab = Random.Range(0, 2);
+			if( selectionPrefab == 0 )
+			{
+				moto = Instantiate(vespaPrefab, initialPosition, Quaternion.identity) as GameObject;
+				Debug.Log("Se crea una Vespa");
+			}
+			else
+			{
+				moto = Instantiate(bantamPrefab, initialPosition, Quaternion.identity) as GameObject;
+				Debug.Log("Se crea una Bantam");
+			}
+			
+			moto.SetActiveRecursively(false);
+			pool.Add(moto);
 		}
 	}
 }

@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Generators\CarGenerator.cs" />
      <Compile Include="Assets\Scripts\Generators\MotorcycleGenerator.cs" />
      <Compile Include="Assets\Scripts\Generators\TruckGenerator.cs" />
+     <Compile Include="Assets\Scripts\Generators\VehicleGenerator.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\CarMovement.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\MotorcycleMovement.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\TruckMovement.cs" />
