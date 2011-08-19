@@ -1,0 +1,181 @@
+fileFormatVersion: 1
+guid: af6ffc1dc1673457098855064b6c95c1
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    //RootNode:
+    - 100000
+    - 400000
+    - 11100000
+    retr2:
+    - 100002
+    - 400002
+    - 3300000
+    - 2300000
+    roda3:
+    - 100004
+    - 400004
+    - 3300002
+    - 2300002
+    roda4:
+    - 100006
+    - 400006
+    - 3300004
+    - 2300004
+    sproda4:
+    - 100008
+    - 400008
+    - 3300006
+    - 2300006
+    roda5:
+    - 100010
+    - 400010
+    - 3300008
+    - 2300008
+    roda7:
+    - 100012
+    - 400012
+    - 3300010
+    - 2300010
+    roda8:
+    - 100014
+    - 400014
+    - 3300012
+    - 2300012
+    rodabas:
+    - 100016
+    - 400016
+    - 3300014
+    - 2300014
+    lanttr:
+    - 100018
+    - 400018
+    - 3300016
+    - 2300016
+    Frente:
+    - 100020
+    - 400020
+    - 3300018
+    - 2300018
+    pneu:
+    - 100022
+    - 400022
+    - 3300020
+    - 2300020
+    Vlateral:
+    - 100024
+    - 400024
+    - 3300022
+    - 2300022
+    VTras:
+    - 100026
+    - 400026
+    - 3300024
+    - 2300024
+    Retrovisor:
+    - 100028
+    - 400028
+    - 3300026
+    - 2300026
+    EspRetr:
+    - 100030
+    - 400030
+    - 3300028
+    - 2300028
+    44Roda4:
+    - 100032
+    - 400032
+    - 3300030
+    - 2300030
+    SPneus:
+    - 100034
+    - 400034
+    - 3300032
+    - 2300032
+    Assoalho:
+    - 100036
+    - 400036
+    - 3300034
+    - 2300034
+    Traseira:
+    - 100038
+    - 400038
+    - 3300036
+    - 2300036
+    Capa:
+    - 100040
+    - 400040
+    - 3300038
+    - 2300038
+    cabitras:
+    - 100042
+    - 400042
+    - 3300040
+    - 2300040
+    Teto:
+    - 100044
+    - 400044
+    - 3300042
+    - 2300042
+    VidroF:
+    - 100046
+    - 400046
+    - 3300044
+    - 2300044
+    Capo:
+    - 100048
+    - 400048
+    - 3300046
+    - 2300046
+    Lateral:
+    - 100050
+    - 400050
+    - 3300048
+    - 2300048
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: Lateral
+    4300002: Capo
+    4300004: VidroF
+    4300006: Teto
+    4300008: cabitras
+    4300010: Capa
+    4300012: Traseira
+    4300014: Assoalho
+    4300016: SPneus
+    4300018: 44Roda4
+    4300020: EspRetr
+    4300022: Retrovisor
+    4300024: VTras
+    4300026: Vlateral
+    4300028: pneu
+    4300030: Frente
+    4300032: lanttr
+    4300034: rodabas
+    4300036: roda8
+    4300038: roda7
+    4300040: roda5
+    4300042: sproda4
+    4300044: roda4
+    4300046: roda3
+    4300048: retr2
