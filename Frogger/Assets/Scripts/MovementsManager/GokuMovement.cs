@@ -33,7 +33,12 @@ public class GokuMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if( Input.GetKey(KeyCode.Escape) || Input.GetKey(KeyCode.Pause)){
+			GameObject wantToExit = GameObject.Find("GameGuiObject");
+			GameGuiScript themenu = wantToExit.GetComponent<GameGuiScript>();
+			themenu.showPause = true;
+
+		}
 		if ( enableToMove )
 		{
 			if( Input.GetKey(KeyCode.DownArrow) )
@@ -60,6 +65,9 @@ public class GokuMovement : MonoBehaviour {
 			if ( rigidbody.position.x < -180 )
 			{
 				// TODO Hacer algo cuando gana
+				GameObject wantToExit = GameObject.Find("GameGuiObject");
+				GameGuiScript themenu = wantToExit.GetComponent<GameGuiScript>();
+				themenu.showWin = true;
 			}
 		}
 	}
@@ -82,9 +90,13 @@ public class GokuMovement : MonoBehaviour {
 	
 	void showSmoke()
 	{
+		GameObject wantToExit = GameObject.Find("GameGuiObject");
+		GameGuiScript themenu = wantToExit.GetComponent<GameGuiScript>();
+		themenu.showLoose = true;
 		flame.emit = false;
 		smoke.emit = true;
-		Invoke("killGoku", 10.0F);
+
+		//Invoke("killGoku", 10.0F); ???
 	}
 	
 	void killGoku()
