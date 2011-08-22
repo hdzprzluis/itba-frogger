@@ -52,9 +52,11 @@
      <Compile Include="Assets\Scripts\Generators\VehicleGenerator.cs" />
      <Compile Include="Assets\Scripts\GuiScript.cs" />
      <Compile Include="Assets\Scripts\Menu\ExitControl.cs" />
+     <Compile Include="Assets\Scripts\Menu\GokuMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuControl.cs" />
      <Compile Include="Assets\Scripts\Menu\NewGameControl.cs" />
      <Compile Include="Assets\Scripts\Menu\OptionsControl.cs" />
+     <Compile Include="Assets\Scripts\Menu\TitleControl.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\CarMovement.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\GokuMovement.cs" />
      <Compile Include="Assets\Scripts\MovementsManager\MotorcycleMovement.cs" />
