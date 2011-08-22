@@ -7,7 +7,6 @@ public class CarGenerator: VehicleGenerator {
 	public GameObject carPrefab;
 
 	void Start () {
-		freq = 80;
 		pool = new List<GameObject>();
 		initialPosition = new Vector3(-44.0F, 1.4F, -420.0F);
 		
