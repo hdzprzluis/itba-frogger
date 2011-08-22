@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GokuMovement : MonoBehaviour {
 	
-	private Vector3 initialPosition;
+	
 	private ParticleEmitter flame;
 	private ParticleEmitter smoke;
 	private bool enableToMove;
@@ -14,11 +14,8 @@ public class GokuMovement : MonoBehaviour {
 	private TruckGenerator truckGenerator;
 	
 
-	
 	// Use this for initialization
 	void Start () {
-		initialPosition = new Vector3(200.0F, 75.0F, -23.0F);
-		transform.position = initialPosition;
 		flame = transform.Find("Flames").GetComponent<ParticleEmitter>();
 		smoke = transform.Find("Smoke").GetComponent<ParticleEmitter>();
 		enableToMove = false;
