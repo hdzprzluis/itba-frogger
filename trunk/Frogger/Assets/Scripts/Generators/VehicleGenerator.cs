@@ -10,7 +10,9 @@ public class VehicleGenerator : MonoBehaviour
 	protected Vector3 initialPosition;
 	private bool stopVehicules;
 	
-	public int freq = 150;
+	public int minFreq = 150;
+	public int maxFreq = 150;
+	private int freq = 150;
 	
 	void Awake()
 	{
@@ -20,8 +22,10 @@ public class VehicleGenerator : MonoBehaviour
 	void FixedUpdate()
 	{
 		ticks += 1;
-		if ( ticks % freq == 0 && !stopVehicules )
+		if ( ticks == freq && !stopVehicules )
 		{
+			ticks = 0;
+			freq = UnityEngine.Random.Range(minFreq, maxFreq);
 			InitGameObject();
 		}
 	}
