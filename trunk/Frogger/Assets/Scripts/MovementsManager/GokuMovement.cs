@@ -7,10 +7,13 @@ public class GokuMovement : MonoBehaviour {
 	private ParticleEmitter flame;
 	private ParticleEmitter smoke;
 	private bool enableToMove;
+	private bool killed = false;
 	
 	private MotorcycleGenerator motoGenerator;
 	private CarGenerator carGenerator;
 	private TruckGenerator truckGenerator;
+	
+
 	
 	// Use this for initialization
 	void Start () {
@@ -20,6 +23,8 @@ public class GokuMovement : MonoBehaviour {
 		smoke = transform.Find("Smoke").GetComponent<ParticleEmitter>();
 		enableToMove = false;
 		Invoke("startToPlay", 2.0F);
+		
+	
 		
 		motoGenerator = GameObject.FindGameObjectWithTag("motoGenerator").GetComponent<MotorcycleGenerator>();
 		carGenerator = GameObject.FindGameObjectWithTag("carGenerator").GetComponent<CarGenerator>();
@@ -33,10 +38,15 @@ public class GokuMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if( Input.GetKey(KeyCode.Escape) || Input.GetKey(KeyCode.Pause)){
+		if( Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Pause)){
 			GameObject wantToExit = GameObject.Find("GameGuiObject");
 			GameGuiScript themenu = wantToExit.GetComponent<GameGuiScript>();
-			themenu.showPause = true;
+			if( themenu.showPause){
+				themenu.showPause = false;
+				Time.timeScale = 1;
+			}else{
+				themenu.showPause = true;
+			}
 
 		}
 		if ( enableToMove )
@@ -86,6 +96,12 @@ public class GokuMovement : MonoBehaviour {
 		col.rigidbody.AddExplosionForce(5.0F, Vector3.right, 10.0F);
 		stopAllVehicules();		
 		Invoke("showSmoke", 2.0F);
+		if(killed == false){
+			GameObject sound = GameObject.Find("SoundObject");
+			SoundManager soundM = sound.GetComponent<SoundManager>();
+			soundM.PlayGokuDies();
+			killed = true;
+		}
 	}
 	
 	void showSmoke()
@@ -95,6 +111,7 @@ public class GokuMovement : MonoBehaviour {
 		themenu.showLoose = true;
 		flame.emit = false;
 		smoke.emit = true;
+
 
 		//Invoke("killGoku", 10.0F); ???
 	}
