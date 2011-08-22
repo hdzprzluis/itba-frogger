@@ -10,7 +10,7 @@ public class VehicleGenerator : MonoBehaviour
 	protected Vector3 initialPosition;
 	private bool stopVehicules;
 	
-	public int freq;
+	public int freq = 150;
 	
 	void Awake()
 	{
