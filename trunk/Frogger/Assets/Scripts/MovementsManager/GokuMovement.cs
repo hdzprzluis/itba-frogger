@@ -13,6 +13,7 @@ public class GokuMovement : MonoBehaviour {
 	private CarGenerator carGenerator;
 	private TruckGenerator truckGenerator;
 	
+	public int speed = 20;
 
 	// Use this for initialization
 	void Start () {
@@ -48,34 +49,31 @@ public class GokuMovement : MonoBehaviour {
 		}
 		if ( enableToMove )
 		{
+			double width = 0.9 * ((float) (Screen.width / 2));
+			double height = 0.9 * ((float) (Screen.height /2));
+
+			
 			if( Input.GetKey(KeyCode.DownArrow) )
 			{
-				if ( rigidbody.position.x < 200 )
-					rigidbody.position = transform.position + Vector3.right * 20;
+				if ( rigidbody.position.x < height )
+					rigidbody.position = transform.position + Vector3.right * speed;
 			}
 			else if( Input.GetKey(KeyCode.UpArrow) )
 			{
-				if ( rigidbody.position.x > -175 )
-					rigidbody.position = transform.position + Vector3.right * -20;
+				if ( rigidbody.position.x > -height )
+					rigidbody.position = transform.position + Vector3.left * speed;
 			}
 			else if( Input.GetKey(KeyCode.LeftArrow) )
 			{
-				if ( rigidbody.position.z > -340 )
-					rigidbody.position = transform.position + Vector3.forward * -20;
+				if ( rigidbody.position.z > -width )
+					rigidbody.position = transform.position + Vector3.back * speed;
 			}
 			else if( Input.GetKey(KeyCode.RightArrow) )
 			{
-				if ( rigidbody.position.z < 348 )
-					rigidbody.position = transform.position + Vector3.forward * 20;
+				if ( rigidbody.position.z < width )
+					rigidbody.position = transform.position + Vector3.forward * speed;
 			}
 			
-			if ( rigidbody.position.x < -180 )
-			{
-				// TODO Hacer algo cuando gana
-				GameObject wantToExit = GameObject.Find("GameGuiObject");
-				GameGuiScript themenu = wantToExit.GetComponent<GameGuiScript>();
-				themenu.showWin = true;
-			}
 		}
 	}
 	
