@@ -19,16 +19,16 @@ public class SoundManager : MonoBehaviour {
 		if(Random.Range(0,1000) < 10){
 			int a = Random.Range(0,4);
 			if( a%4 == 0){
-				audio.PlayOneShot(carClaxon,10000);
+				audio.PlayOneShot(carClaxon);
 			}else if( a%4 ==1){
-				audio.PlayOneShot(bikeClaxon,10000);
+				audio.PlayOneShot(bikeClaxon);
 			}else if( a%4 ==2){
-				audio.PlayOneShot(otherHorn,10000);
+				audio.PlayOneShot(otherHorn);
 			}
 		}
 	}
 	public void PlayGokuDies(){
-		audio.PlayOneShot(gokuDies,10000);
+		audio.PlayOneShot(gokuDies);
 	}
 
 }
