@@ -11,7 +11,6 @@ public class GameGuiScript : MonoBehaviour {
 	// Use this for initialization
 	
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -29,7 +28,7 @@ public class GameGuiScript : MonoBehaviour {
 			myStyle.fontSize=70;
 			myStyle.normal.textColor = Color.white;
 			
-			
+		
 			int positionX;
 			int positionY;
 			int menuContainerHeight = 400;
@@ -44,7 +43,7 @@ public class GameGuiScript : MonoBehaviour {
 			// 
 			if (GUI.Button (new Rect (positionX + 10, positionY + 80, 380, 100), "Continue")) {
 				showPause = false;
-							Time.timeScale = 1;
+				Time.timeScale = 1;
 			}
 			
 			// 2do boton
@@ -62,7 +61,8 @@ public class GameGuiScript : MonoBehaviour {
 		//	colorList.Add(Color.white);
 		//	colorList.Add(Color.red);
 		//	colorList.Add(Color.yellow);	
-			
+	
+						
 			myStyle.normal.textColor = Color.white;
 			
 			

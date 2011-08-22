@@ -1,2 +1,6 @@
 fileFormatVersion: 1
 guid: 852752e22a8bb44bfbeb595035b2f2dd
+MonoImporter:
+  importerVersion: 1
+  defaultReferences:
+    sound: {}

@@ -1,0 +1,11 @@
+fileFormatVersion: 1
+guid: d3c0ce3a4fb654b95a449cdddb19f6ae
+MonoImporter:
+  importerVersion: 1
+  defaultReferences:
+    carClaxon: {fileID: 8300000, guid: c530e6b393ca94c6ebfa5d23680f74d0, type: 1}
+    bikeClaxon: {fileID: 8300000, guid: 2f7621362a6374143b21db78b6122d43, type: 1}
+    otherHorn: {fileID: 8300000, guid: e42b4aa730c5a4550bc976f7dd92f102, type: 1}
+    quilombo: {fileID: 8300000, guid: b17566bb268d14afd8482389ab7dadd7, type: 1}
+    gokuDies: {fileID: 8300000, guid: d4c34357d91e84cabb9138e404a62566, type: 1}
+    pauseSound: {fileID: 8300000, guid: 01f34c82d100648cbb69ca57a7ecd42b, type: 1}
