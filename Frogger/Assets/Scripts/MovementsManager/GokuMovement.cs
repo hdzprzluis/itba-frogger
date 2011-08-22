@@ -86,6 +86,14 @@ public class GokuMovement : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision col)
 	{
+		Debug.Log(col.collider.tag);
+		if (col.collider.tag == "Finish") {
+			GameObject wantToExit = GameObject.Find("GameGuiObject");		
+			GameGuiScript themenu = wantToExit.GetComponent<GameGuiScript>();		
+			themenu.showWin = true;
+			return;
+		}
+		
 		flame.emit = true;
 		enableToMove = false;
 		col.rigidbody.AddExplosionForce(5.0F, Vector3.right, 10.0F);

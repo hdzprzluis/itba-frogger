@@ -35,7 +35,7 @@ public class VehicleGenerator : MonoBehaviour
 		vehicle.SetActiveRecursively(false);
 		pool.Add(vehicle);
 		vehiculesInStreet.Remove(vehicle);
-		Debug.Log(string.Format("Eliminando {0}", vehicle.tag));
+		//Debug.Log(string.Format("Eliminando {0}", vehicle.tag));
 	}
 	
 	public void InitGameObject()

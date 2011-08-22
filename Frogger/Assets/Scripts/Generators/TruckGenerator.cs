@@ -18,12 +18,12 @@ public class TruckGenerator : VehicleGenerator {
 			if( selectionPrefab == 0 )
 			{
 				truck = Instantiate(cementPrefab, initialPosition, Quaternion.identity) as GameObject;
-				Debug.Log("Se crea una Cement");
+				//Debug.Log("Se crea una Cement");
 			}
 			else
 			{
 				truck = Instantiate(ramPrefab, initialPosition, Quaternion.identity) as GameObject;
-				Debug.Log("Se crea una Ram");
+				//Debug.Log("Se crea una Ram");
 			}
 			
 			truck.SetActiveRecursively(false);

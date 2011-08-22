@@ -18,12 +18,12 @@ public class MotorcycleGenerator : VehicleGenerator {
 			if( selectionPrefab == 0 )
 			{
 				moto = Instantiate(vespaPrefab, initialPosition, Quaternion.identity) as GameObject;
-				Debug.Log("Se crea una Vespa");
+				//Debug.Log("Se crea una Vespa");
 			}
 			else
 			{
 				moto = Instantiate(bantamPrefab, initialPosition, Quaternion.identity) as GameObject;
-				Debug.Log("Se crea una Bantam");
+				//Debug.Log("Se crea una Bantam");
 			}
 			
 			moto.SetActiveRecursively(false);
