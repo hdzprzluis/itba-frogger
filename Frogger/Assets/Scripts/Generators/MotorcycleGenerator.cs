@@ -8,7 +8,6 @@ public class MotorcycleGenerator : VehicleGenerator {
 	public GameObject bantamPrefab;
 	
 	void Start () {
-		freq = 65;
 		pool = new List<GameObject>();
 		initialPosition = new Vector3(-126.0F, -1.46F, -450.0F);
 		

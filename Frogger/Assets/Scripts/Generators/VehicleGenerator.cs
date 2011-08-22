@@ -7,9 +7,10 @@ public class VehicleGenerator : MonoBehaviour
 	protected List<GameObject> pool;
 	protected List<GameObject> vehiculesInStreet;
 	protected int ticks;
-	protected int freq;
 	protected Vector3 initialPosition;
 	private bool stopVehicules;
+	
+	public int freq;
 	
 	void Awake()
 	{

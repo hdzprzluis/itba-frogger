@@ -8,7 +8,6 @@ public class TruckGenerator : VehicleGenerator {
 	public GameObject ramPrefab;
 	
 	void Start () {
-		freq = 150;
 		pool = new List<GameObject>();
 		initialPosition = new Vector3(114.0F, 1.5F, -400.0F);
 		
