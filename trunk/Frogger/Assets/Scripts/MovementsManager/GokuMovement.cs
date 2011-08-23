@@ -52,7 +52,7 @@ public class GokuMovement : MonoBehaviour {
 		if ( enableToMove )
 		{
 			double width = 0.9 * ((float) (Screen.width / 2));
-			double height = 0.9 * ((float) (Screen.height /2));
+			double height = 0.95 * ((float) (Screen.height /2));
 
 			
 			if( Input.GetKey(KeyCode.DownArrow) )
