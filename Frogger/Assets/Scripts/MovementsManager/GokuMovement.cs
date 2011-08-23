@@ -39,6 +39,9 @@ public class GokuMovement : MonoBehaviour {
 			GameObject wantToExit = GameObject.Find("GameGuiObject");
 			GameGuiScript themenu = wantToExit.GetComponent<GameGuiScript>();
 			if( themenu.showPause){
+				GameObject sound = GameObject.Find("SoundObject");
+				SoundManager soundM = sound.GetComponent<SoundManager>();
+				soundM.VolumeUp();
 				themenu.showPause = false;
 				Time.timeScale = 1;
 			}else{
@@ -82,14 +85,22 @@ public class GokuMovement : MonoBehaviour {
 		carGenerator.stopAllVehicules();
 		truckGenerator.stopAllVehicules();
 	}
-	
+	void RotateOnWin()
+	{	
+		transform.Rotate(new Vector3(0,10,0));
+	}
 	void OnCollisionEnter(Collision col)
 	{
 		Debug.Log(col.collider.tag);
 		if (col.collider.tag == "Finish") {
+			enableToMove = false;
+			InvokeRepeating ("RotateOnWin", 0, 0.1F);
+			GameObject sound = GameObject.Find("SoundObject");
+			SoundManager soundM = sound.GetComponent<SoundManager>();
+			soundM.PlayGokuWins();
 			GameObject wantToExit = GameObject.Find("GameGuiObject");		
 			GameGuiScript themenu = wantToExit.GetComponent<GameGuiScript>();		
-			themenu.showWin = true;
+			themenu.showWin = true;	
 			return;
 		}
 		
