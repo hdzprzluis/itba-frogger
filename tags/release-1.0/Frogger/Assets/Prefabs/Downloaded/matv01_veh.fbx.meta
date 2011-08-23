@@ -1,0 +1,289 @@
+fileFormatVersion: 1
+guid: 9126fd68ce6844f6c9ebb7b45280c96d
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    matrixTransform_19:
+    - 100000
+    - 400000
+    interior_1:
+    - 100002
+    - 400002
+    - 3300000
+    - 2300000
+    matrixTransform_18:
+    - 100004
+    - 400004
+    chains_1:
+    - 100006
+    - 400006
+    - 3300002
+    - 2300002
+    interior:
+    - 100008
+    - 400008
+    matrixTransform_17:
+    - 100010
+    - 400010
+    chains:
+    - 100012
+    - 400012
+    passenger_side_front_wheel_1:
+    - 100014
+    - 400014
+    - 3300004
+    - 2300004
+    matrixTransform_16:
+    - 100016
+    - 400016
+    passenger_side_front_wheel:
+    - 100018
+    - 400018
+    passenger_side_back_wheel_1:
+    - 100020
+    - 400020
+    - 3300006
+    - 2300006
+    matrixTransform_15:
+    - 100022
+    - 400022
+    passenger_side_back_wheel:
+    - 100024
+    - 400024
+    driver_side_back_wheel_1:
+    - 100026
+    - 400026
+    - 3300008
+    - 2300008
+    matrixTransform_14:
+    - 100028
+    - 400028
+    driver_side_back_wheel:
+    - 100030
+    - 400030
+    mount_1:
+    - 100032
+    - 400032
+    - 3300010
+    - 2300010
+    driver_side_front_wheel_1:
+    - 100034
+    - 400034
+    - 3300012
+    - 2300012
+    matrixTransform_13:
+    - 100036
+    - 400036
+    driver_side_front_wheel:
+    - 100038
+    - 400038
+    m240_1:
+    - 100040
+    - 400040
+    - 3300014
+    - 2300014
+    matrixTransform_12:
+    - 100042
+    - 400042
+    mount:
+    - 100044
+    - 400044
+    turret_glass_1:
+    - 100046
+    - 400046
+    - 3300016
+    - 2300016
+    matrixTransform_11:
+    - 100048
+    - 400048
+    m240:
+    - 100050
+    - 400050
+    turret_1:
+    - 100052
+    - 400052
+    - 3300018
+    - 2300018
+    matrixTransform_10:
+    - 100054
+    - 400054
+    turret_glass:
+    - 100056
+    - 400056
+    glass_1:
+    - 100058
+    - 400058
+    - 3300020
+    - 2300020
+    matrixTransform_9:
+    - 100060
+    - 400060
+    turret:
+    - 100062
+    - 400062
+    matrixTransform_8:
+    - 100064
+    - 400064
+    glass:
+    - 100066
+    - 400066
+    passenger_back_window_1:
+    - 100068
+    - 400068
+    - 3300022
+    - 2300022
+    matrixTransform_7:
+    - 100070
+    - 400070
+    passenger_back_window:
+    - 100072
+    - 400072
+    passenger_back_door_1:
+    - 100074
+    - 400074
+    - 3300024
+    - 2300024
+    matrixTransform_6:
+    - 100076
+    - 400076
+    passenger_back_door:
+    - 100078
+    - 400078
+    passenger_front_window_1:
+    - 100080
+    - 400080
+    - 3300026
+    - 2300026
+    matrixTransform_5:
+    - 100082
+    - 400082
+    passenger_front_window:
+    - 100084
+    - 400084
+    passenger_front_door_1:
+    - 100086
+    - 400086
+    - 3300028
+    - 2300028
+    matrixTransform_4:
+    - 100088
+    - 400088
+    passenger_front_door:
+    - 100090
+    - 400090
+    driver_back_door_1:
+    - 100092
+    - 400092
+    - 3300030
+    - 2300030
+    driver_back_window_1:
+    - 100094
+    - 400094
+    - 3300032
+    - 2300032
+    matrixTransform_3:
+    - 100096
+    - 400096
+    driver_back_window:
+    - 100098
+    - 400098
+    matrixTransform_2:
+    - 100100
+    - 400100
+    driver_back_door:
+    - 100102
+    - 400102
+    driver_front_door_1:
+    - 100104
+    - 400104
+    - 3300034
+    - 2300034
+    driver_front_window_1:
+    - 100106
+    - 400106
+    - 3300036
+    - 2300036
+    matrixTransform_1:
+    - 100108
+    - 400108
+    driver_front_window:
+    - 100110
+    - 400110
+    hull_1:
+    - 100112
+    - 400112
+    - 3300038
+    - 2300038
+    matrixTransform:
+    - 100114
+    - 400114
+    driver_front_door:
+    - 100116
+    - 400116
+    sceneRoot 1:
+    - 100118
+    - 400118
+    hull:
+    - 100120
+    - 400120
+    group_1:
+    - 100122
+    - 400122
+    group:
+    - 100124
+    - 400124
+    Collada_visual_scene_group:
+    - 100126
+    - 400126
+    Collada_visual_scene_group 1:
+    - 100128
+    - 400128
+    sceneRoot:
+    - 100130
+    - 400130
+    //RootNode:
+    - 100132
+    - 400132
+    - 11100000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: hull_1
+    4300002: driver_front_door_1
+    4300004: driver_front_window_1
+    4300006: driver_back_door_1
+    4300008: driver_back_window_1
+    4300010: passenger_front_door_1
+    4300012: passenger_front_window_1
+    4300014: passenger_back_door_1
+    4300016: passenger_back_window_1
+    4300018: glass_1
+    4300020: turret_1
+    4300022: turret_glass_1
+    4300024: m240_1
+    4300026: mount_1
+    4300028: driver_side_front_wheel_1
+    4300030: driver_side_back_wheel_1
+    4300032: passenger_side_back_wheel_1
+    4300034: passenger_side_front_wheel_1
+    4300036: chains_1
+    4300038: interior_1

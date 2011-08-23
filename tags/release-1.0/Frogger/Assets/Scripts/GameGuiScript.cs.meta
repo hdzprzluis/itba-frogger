@@ -1,0 +1,7 @@
+fileFormatVersion: 1
+guid: f6b2b86c2afdc47dc94faa77a1672fb1
+MonoImporter:
+  importerVersion: 1
+  defaultReferences:
+    myFont: {}
+    gokuDies: {fileID: 8300000, guid: d4c34357d91e84cabb9138e404a62566, type: 1}

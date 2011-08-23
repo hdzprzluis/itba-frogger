@@ -1,0 +1,85 @@
+fileFormatVersion: 1
+guid: 3ca4b877fdd8d4e0b95a48850ce1f9b9
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    Tali2:
+    - 100000
+    - 400000
+    - 3300000
+    - 2300000
+    Shirt:
+    - 100002
+    - 400002
+    - 3300002
+    - 2300002
+    Hand_Belt:
+    - 100004
+    - 400004
+    - 3300004
+    - 2300004
+    Belt:
+    - 100006
+    - 400006
+    - 3300006
+    - 2300006
+    Teeth:
+    - 100008
+    - 400008
+    - 3300008
+    - 2300008
+    Goku:
+    - 100010
+    - 400010
+    - 3300010
+    - 2300010
+    Toya:
+    - 100012
+    - 400012
+    - 3300012
+    - 2300012
+    //RootNode:
+    - 100014
+    - 400014
+    - 11100000
+    Hair:
+    - 100016
+    - 400016
+    - 3300014
+    - 2300014
+    Tali1:
+    - 100018
+    - 400018
+    - 3300016
+    - 2300016
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: Goku
+    4300002: Teeth
+    4300004: Hand_Belt
+    4300006: Shirt
+    4300008: Belt
+    4300010: Hair
+    4300012: Toya
+    4300014: Tali2
+    4300016: Tali1
