@@ -20,9 +20,8 @@ public class GokuMovement : MonoBehaviour {
 		flame = transform.Find("Flames").GetComponent<ParticleEmitter>();
 		smoke = transform.Find("Smoke").GetComponent<ParticleEmitter>();
 		enableToMove = false;
+		transform.position = new Vector3(189, 33, 116);
 		Invoke("startToPlay", 2.0F);
-		
-	
 		
 		motoGenerator = GameObject.FindGameObjectWithTag("motoGenerator").GetComponent<MotorcycleGenerator>();
 		carGenerator = GameObject.FindGameObjectWithTag("carGenerator").GetComponent<CarGenerator>();
